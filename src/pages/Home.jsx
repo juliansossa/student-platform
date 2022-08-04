@@ -1,5 +1,5 @@
 import React from 'react';
-import CardsBachillerato from '../components/CardsBachillerato';
+import CardsBachillerato from '@components/CardsBachillerato';
 
 const Home = () => {
   return (

@@ -1,6 +1,9 @@
 import React from 'react'
 import CardBachillerato from './CardBachillerato';
-import "../styles/CardsBachillerato.css"
+import "@styles/CardsBachillerato.css";
+import estudioVirtual from "@images/estudioVirtual.jpg";
+import estudioCorreo from "@images/estudioCorreo.jpg";
+import estudioModulos from "@images/estudioModulos.jpg";
 
 const CardsBachillerato = () => {
   return (
@@ -10,7 +13,7 @@ const CardsBachillerato = () => {
             </h1>
         <div className="cards">
             <CardBachillerato
-              src="https://cdn.pixabay.com/photo/2022/05/17/02/54/zoom-7201517_1280.png"
+              src={estudioCorreo}
               title="Bachillerato por correo"
               state="enabled"
               text="El bachillerato por correo es la forma de estudio
@@ -19,13 +22,22 @@ const CardsBachillerato = () => {
                 respectivas Evaluaciones en Excel."
             />
             <CardBachillerato
-              src="https://images.pexels.com/photos/193003/pexels-photo-193003.jpeg?cs=srgb&dl=pexels-torsten-dettlaff-193003.jpg&fm=jpg"
-              title="Bachillerato por correo"
-              state="enabled"
-              text="El bachillerato por correo es la forma de estudio
-                más sencilla con la cual usted puede realizar su bachillerato,
-                Consta de módulos de estudio en PDF y Actividades con sus
-                respectivas Evaluaciones en Excel."
+              src={estudioVirtual}
+              title="Bachillerato virtual"
+              state="disabled"
+              text="Estudia mediante nuestra plataforma académica (100% Virtual)
+                desde cualquier lugar de Colombia. Solo se necesita acceso a
+                internet, disponible para cualquier dispositivo móvil como celular,
+                tablet ó computador."
+            />
+            <CardBachillerato
+              src={estudioModulos}
+              title="Bachillerato por Módulos"
+              state="disabled"
+              text="Nuestra nueva modalidad de estudio consta de cartillas de estudio
+                las cuales hacemos llegar a su lugar de residencia.
+                Buscamos llegar a
+                todas las personas que no tienen conocimientos informáticos."
             />
         </div>
     </div>
