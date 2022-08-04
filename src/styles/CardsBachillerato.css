@@ -1,0 +1,30 @@
+.cards__container {
+    padding-top: 60px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.cards__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 45px;
+    color: var(--blue);
+    padding-bottom: 20px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 900px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

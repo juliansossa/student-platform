@@ -1,0 +1,27 @@
+* {
+    vertical-align: baseline;
+    font-family: sans-serif;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --blue: #006fff;
+    --black: #0b0e11;
+    --white: #ffffff;
+    --green: rgb(43, 180, 126);
+    --border: #dddfe248;
+    --dark: rgb(43, 47, 54);
+    --gray: rgb(118, 128, 143);
+    --tag-primary: rgba(2, 192, 118, 0.2);
+    --tag-secondary: rgba(240, 185, 11, 0.2);
+}
+.body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+}
