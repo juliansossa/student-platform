@@ -1,0 +1,71 @@
+@import "@styles/global.css";
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: var(--dark);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+}
+.nav__left {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2rem;
+}
+div img {
+    height: 50px;
+    object-fit: contain;
+}
+.nav__right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+.nav__right a {
+    text-decoration: none;
+    color: var(--white);
+    margin-right: 1.5rem;
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 0.875rem;
+    text-transform: uppercase;
+}
+a {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+a:focus:after,
+a:hover:after {
+    width: 100%;
+    left: 0%;
+}
+  
+a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -6px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
