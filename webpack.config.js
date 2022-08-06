@@ -11,12 +11,16 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "blundle.js",
-        publicPath: "/",
+        publicPath: '/'
     },
     resolve: {
         extensions: [".js", ".jsx"],
         alias: {
-
+            "@components": path.resolve(__dirname, "src/components/"),
+            "@pages": path.resolve(__dirname, "src/pages/"),
+            "@styles": path.resolve(__dirname, "src/styles/"),
+            "@icons": path.resolve(__dirname, "public/assets/icons/"),
+            "@images": path.resolve(__dirname, "public/assets/images/"),
         }
     },
     mode: "production",
@@ -37,7 +41,18 @@ module.exports = {
             {
                 test: /\.html.$/,
                 use: [
-                    loader
+                    { loader: "html-loader" }
+                ]
+            },
+            {
+                test: /\.(png|jp(e*)g|svg|gif)$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      name: 'images/[hash]-[name].[ext]',
+                    }
+                  }
                 ]
             }
         ]
@@ -50,13 +65,5 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "[name].css"
         }),
-        new CleanWebpackPlugin(),
-    ],
-    optimization: {
-        minimize: true,
-        minimizer: [
-            new CssMinimizerPlugin(),
-            new TerserPlugin(),
-        ]
-    }
+    ]
 }

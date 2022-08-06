@@ -1,9 +1,12 @@
+@import "@styles/global.css";
+
 .cards__container {
     padding-top: 60px;
     margin-left: 3rem;
     margin-right: 3rem;
 }
 .cards__title {
+    padding-top: 50px;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
@@ -26,5 +29,13 @@
     .cards {
         display: grid;
         grid-template-columns: 1fr;
+    }
+    .cards__title {
+        padding-top: 30px;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 35px;
+        color: var(--blue);
+        padding-bottom: 10px;
     }
 }
