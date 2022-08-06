@@ -4,8 +4,10 @@ import Navbar from "@components/Navbar";
 
 const Home = () => {
   return (
-    // <CardsBachillerato />
-    <Navbar />
+    <>
+      <Navbar />
+      <CardsBachillerato />
+    </>
   )
 }
 

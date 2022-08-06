@@ -12,26 +12,26 @@
     transition: 250ms;
     transform: translateY(-1%);
 }
-img {
+.card__media img {
     width: 100%;
     object-fit: cover;
     height: 15rem;
 }
-img:hover {
+.card__media img:hover {
     transform: scale(0.98);
     transition: .3s;
 }
 .card__info {
     padding: 30px 20px 20px 20px;
 }
-h3 {
+.card__info h3 {
     cursor: pointer;
 }
-h3:hover {
+.card__info h3:hover {
     color: var(--blue);
     transition: .3s;
 }
-span {
+.card__info span {
     color: var(--green);
     font-weight: 700;
     font-size: 15px;
@@ -50,7 +50,7 @@ span {
     line-height: 24px;
     text-align: left;
 }
-.button {
+.card__button {
     background: var(--blue);
     color: white;
     font-size: 17px;
@@ -67,7 +67,7 @@ span {
     width: 100%;
     cursor: pointer;
 }
-.button .icon {
+.card__button .card__icon {
     background: #fff;
     height: 2em;
     width: 2em;
@@ -79,21 +79,21 @@ span {
     left: 0.4em;
     transition: all 0.5s;
 }
-.icon svg {
+.card__icon svg {
     margin-left: 0.4em;
     transition: all 0.5s;
     color: #2CA0D9;
     width: 1.2rem;
     height: 1.2rem;
 }
-.button:hover .icon svg {
+.card__button:hover .card__icon svg {
     transform: rotate(360deg);
 }
-.button:hover .icon {
+.card__button:hover .card__icon {
     width: calc(100% - 0.85rem);
     border-radius: 0.5em;
 }
-.button p {
+.card__button p {
     text-transform: uppercase;
     margin: auto;
 }

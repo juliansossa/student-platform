@@ -3,7 +3,7 @@ import "@styles/Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className='nav'>
         <div className="nav__left">
             <div>
                 <img src="https://centroeducativonacional.com/images/logo.png" alt="" srcset="" />

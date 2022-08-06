@@ -15,8 +15,8 @@ const CardBachillerato = ({src, title, state, text}) => {
           <div className="card__text">
             <p>{text}</p>
           </div>
-          <button className="button">
-            <div className="icon">
+          <button className="card__button">
+            <div className="card__icon">
             <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
               <g id="icomoon-ignore">
               </g>
