@@ -41,6 +41,9 @@
     text-transform: capitalize;
     font-family: sans-serif;
 }
+.card__info .card__span-disabled {
+    color: var(--red);
+} 
 .card__text {
     padding: .3em 0 .7em;
 }
@@ -68,6 +71,9 @@
     width: 100%;
     cursor: pointer;
 }
+.card__button-disabled {
+    background: var(--tag-primary);
+}
 .card__button .card__icon {
     background: #fff;
     height: 2em;
@@ -87,6 +93,12 @@
     width: 1.2rem;
     height: 1.2rem;
 }
+.card__button-disabled .card__icon,
+.card__button-disabled .card__icon svg {
+    width: 0;
+    height: 0;
+    display: none;
+}
 .card__button:hover .card__icon svg {
     transform: rotate(360deg);
 }
@@ -97,4 +109,7 @@
 .card__button p {
     text-transform: uppercase;
     margin: auto;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
 }

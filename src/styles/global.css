@@ -14,8 +14,9 @@
     --border: #dddfe248;
     --dark: #1b1c1d;
     --gray: rgb(118, 128, 143);
-    --tag-primary: rgba(2, 192, 118, 0.2);
-    --tag-secondary: rgba(240, 185, 11, 0.2);
+    --red: #FF4045;
+    --tag-primary: rgba(2, 192, 119, 0.605);
+    --tag-secondary: rgb(240, 171, 11);
 }
 .body {
     margin: 0;
