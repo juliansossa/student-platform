@@ -1,9 +1,9 @@
 import React from 'react'
 import CardBachillerato from './CardBachillerato';
-import "@styles/CardsBachillerato.css";
-import estudioVirtual from "@images/estudioVirtual.jpg";
-import estudioCorreo from "@images/estudioCorreo.jpg";
-import estudioModulos from "@images/estudioModulos.jpg";
+import "../styles/CardsBachillerato.css";
+import estudioVirtual from "../assets/images/estudioVirtual.jpg";
+import estudioCorreo from "../assets/images/estudioCorreo.jpg";
+import estudioModulos from "../assets/images/estudioModulos.jpg";
 
 const CardsBachillerato = () => {
   return (

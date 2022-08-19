@@ -1,4 +1,4 @@
-@import "@styles/global.css";
+@import "./global.css";
 
 header{
     z-index: 100;

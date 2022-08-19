@@ -1,5 +1,5 @@
 import React from 'react'
-import "@styles/CardBachillerato.css";
+import "../styles/CardBachillerato.css";
 
 const CardBachillerato = ({src, title, state, text}) => {
   let ClassNameBtn = "";

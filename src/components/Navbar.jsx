@@ -1,6 +1,6 @@
-import React from 'react'
-import MenuIcon from "@icons/menu-icon.png";
-import "@styles/Navbar.css";
+import React from 'react';
+import MenuIcon from "../assets/icons/menu-icon.png";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
   return (
@@ -14,7 +14,7 @@ const Navbar = () => {
           <i className="menu-icon"><img src={MenuIcon} alt /></i>
         </label>
         <ul>
-          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="/">Inicio</a></li>
           <li><a href="bachillerato-virtual">Bachillerato Virtual</a></li>
           <li><a href>Nosotros</a></li>
           <li><a href>Contacto</a></li>

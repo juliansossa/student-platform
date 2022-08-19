@@ -1,6 +1,6 @@
 import React from 'react';
-import CardsBachillerato from '@components/CardsBachillerato';
-import Navbar from "@components/Navbar";
+import CardsBachillerato from '../components/CardsBachillerato';
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
